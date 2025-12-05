@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Магазин цифрового товара</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.card img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+.price {
+    font-size: 22px;
+    color: #00ffcc;
+    margin: 10px 0;
+}
+button {
+    background: #00ffcc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background: #00ddb3;
+}
+.footer {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png">
+    
+    <h2>Цифровой продукт</h2>
+    <p>Описание товара. Доставка автоматически в Telegram.</p>
+    
+    <div class="price">199 грн</div>
+
+    <button onclick="location.href='https://t.me/pppbot'">
+        Купить в Telegram
+    </button>
+
+    <div class="footer">
+        Оплата через бота • 24/7
+    </div>
+</div>
+
+</body>
+</html>
